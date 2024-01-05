@@ -33,46 +33,28 @@ df2.head()
 # In[213]:
 
 
-df1.shape
+print("The no. of rows and columns in df1:",df1.shape)
 
 
 # In[214]:
 
 
-df2.shape
-
-
-# In[215]:
-
+print("The no. of rows and columns in df1:",df2.shape)
 
 df = pd.concat([df1,df2], axis = 0)
 df.head()
 
+print("The no. of rows and columns in merged file:",df.shape)
 
-# In[216]:
-
-
-df.shape
-
-
-# In[31]:
 df['Churn']=df['Churn'].astype(int)
 from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
 lst=['State','International plan','Voice mail plan']
 for i in lst:
   df[i]=le.fit_transform(df[i])
-df.info()
+print(" Deatiled Information",df.info())
 
-
-# In[32]:
-
-
-df.isnull().sum()
-
-
-# In[33]:
-
+print(" Analysis of Null values Present",df.isnull().sum())
 
 df.describe()
 
@@ -87,7 +69,7 @@ df.describe()
 
 
 churn =df['Churn'].value_counts()
-churn
+print(churn
 
 
 # In[160]:
