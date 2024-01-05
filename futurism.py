@@ -75,7 +75,7 @@ df.describe()
 # In[136]:
 
 
-df.describe(include=["object"]).T
+#df.describe(include=["object"]).T
 
 
 # In[60]:
