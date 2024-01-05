@@ -84,10 +84,10 @@ churn
 # In[160]:
 
 
-plt.pie(churn,autopct='%1.1f%%')
-plt.title('Overall Count of Churn')
-plt.legend()
-plt.show()
+#plt.pie(churn,autopct='%1.1f%%')
+#plt.title('Overall Count of Churn')
+#plt.legend()
+#plt.show()
 
 
 # <b>It is very clear from the above figure that no. of customers churned is very less.
