@@ -69,7 +69,7 @@ df.describe()
 
 
 churn =df['Churn'].value_counts()
-print(churn
+print(churn)
 
 
 # In[160]:
