@@ -52,7 +52,11 @@ df.shape
 
 # In[31]:
 df['Churn']=df['Churn'].astype(int)
-
+from sklearn.preprocessing import LabelEncoder
+le=LabelEncoder()
+lst=['State','International plan','Voice mail plan']
+for i in lst:
+  df[i]=le.fit_transform(df[i])
 df.info()
 
 
