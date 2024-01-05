@@ -10,7 +10,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import chi2_contingency 
 
+import logging
 
+logging.basicConfig(level='INFO')
+
+mlogger = logging.getLogger('matplotlib')
+mlogger.setLevel(logging.WARNING)
 # In[211]:
 
 
