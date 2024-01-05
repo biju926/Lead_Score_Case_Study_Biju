@@ -9,14 +9,14 @@ from scipy.stats import chi2_contingency
 
 
 df1 = pd.read_csv("churn-bigml-80.csv")
-df.head()
+df1.head()
 
 
 # In[212]:
 
 
 df2 = pd.read_csv("churn-bigml-20.csv")
-df.head()
+df2.head()
 
 
 # In[213]:
@@ -78,7 +78,7 @@ churn
 # In[160]:
 
 
-plt.pie(churn,labels=labels,autopct='%1.1f%%')
+plt.pie(churn,autopct='%1.1f%%')
 plt.title('Overall Count of Churn')
-plt.legend()
+#plt.legend()
 plt.show()
