@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-#import seaborn as sns
-#from scipy.stats import chi2_contingency 
+import seaborn as sns
+from scipy.stats import chi2_contingency 
 
 
 # In[211]:
