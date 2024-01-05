@@ -51,7 +51,7 @@ df.shape
 
 
 # In[31]:
-
+df['Churn']=df['Churn'].astype(int)
 
 df.info()
 
